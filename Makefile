@@ -8,7 +8,7 @@ compile-server:
 	nim c -o:bin/server src/server.nim
 
 run-client:
-	./bin/client localhost
+	./bin/client localhost Jasper
 
 run-protocol:
 	./bin/protocol
