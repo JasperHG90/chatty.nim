@@ -15,3 +15,9 @@ run-protocol:
 
 run-server:
 	./bin/server
+
+docker-image-client-size:
+	docker inspect -f "{{.Size}}" chatty/client
+
+docker-build-client:
+	docker build -f Dockerfile.client . -t chatty/client
